@@ -55,9 +55,26 @@ nav, footer {
 	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
 }
 
+#egg-modal {
+	display: none;
+	background-color: rgba(150, 0, 0, 0.09);
+	position: fixed;
+	top: 0;
+ margin-bottom: 1px;
+	/* position from top down left right  modal is fixed */
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	/* this means it sits on top of body, ie, in front */
+	/*This puts our modal in front of the body (which has a default z-index setting of `0`*/
+	overflow: auto;
+	/*If overflow is clipped, a scroll-bar should be added to see the rest of the content*/
+}
+
 #modal-textbox {
 	background-color: white;
-	height: 350px;
+	height: 400px;
 	width: 550px;
 	border-radius: 2px;
 	margin: 150px auto;
@@ -67,9 +84,27 @@ nav, footer {
 	padding: 2%;
 	line-height: 120%;
 }
+#egg-textbox {
+	background-color: white;
+	height: 400px;
+	width: 550px;
+	border-radius: 2px;
+	margin: 150px auto;
+	/*This will set the margins for the top and the bottom to 150px (or larger). The right and left will automatically set themselves (and keep the box centered horizontally).*/
+	box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+	/*This will give the box some depth. a grey shadow down on the lower border*/
+	padding: 2%;
+  padding-bottom: 12%s;
+	line-height: 120%;
+}
 
 #modal-footer {
+	text-align: left;
+}
+
+#egg-footer {
 	text-align: right;
+  margin-bottom: 12px;
 }
 
 h1 {
@@ -85,6 +120,7 @@ h1 {
 	color: pink;
 	font-family: 'Arial';
 	cursor: pointer;
+  margin-bottom: 5px;
 }
 .container {
      display: flex;
@@ -105,17 +141,19 @@ h1 {
    }
    /* ======= CAROUSEL SECTION ======== */
    .carousel-container {
-     width: 70%;
+     width: 100%;
+     height: 90%;
      display: flex;
-     justify-content: space-around;
+     /* justify-content: space-around; */
    }
    .carousel-images {
-     width: 80%;
+     width: 150px;
      background: #fa8d8e;
-     padding: 10px;
+     margin: 1px;
      border-radius: 10px;
      box-sizing: border-box;
      box-shadow: 2px 2px #f2cd99;
+
    
    }
    .carousel-images img {
@@ -129,6 +167,7 @@ h1 {
      /* important mod wins out because 1pt elements 1 pt for first of type  sp 021*/
      display: block;
    }
+   
    .carousel-button {
      align-self: center;
      background: #f2cd99;
@@ -159,11 +198,13 @@ h1 {
    }
    
    img {
+    height: 300px;
+    width: 200px;
      border-radius: 80%;
-     position: relative;
+     position: left;
      top: 10px;
-     right: 20px;
-     float: right;
+     right: 120px;
+     float: left;
    }
    
    .box-2 h1 {
@@ -218,8 +259,8 @@ h1 {
 .egg {
  margin: 20px;
  color: indianred;
- width: 100px;
- height: 225px;
+ width: 160px;
+ height: 300px;
  background-color: #faf3c0;
  border: 1px solid #000;
  border-top-left-radius: 50% 60%;

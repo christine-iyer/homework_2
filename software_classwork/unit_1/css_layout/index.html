@@ -1,90 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Grid</title>
-     <script defer src="script.js"></script>
-     <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid</title>
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="style.css">
 
 
 </head>
-<body>
-     <nav>
-      <div><a href="index.html">Stay At Home</a></div>
-      <div><a href="">Alone Mom</a></div>
-     </nav>
-     <aside class="flex-ctr">
-          <div class="container">
 
-             <!-- Tamogathchi Home -->
-  <section id="Tamagotchi-home" class="none">
-    <div class="egg"></div>
-               <!-- =========== CAROUSEL TOP ============== -->
-               <!-- <img src="images/carousel.png" alt=""> -->
-               <h1>CORGI CAROUSEL!</h1>
-               <!-- =========== CAROUSEL CONTAINER ======== -->
-               <div class="carousel-container">
-                 <!-- previous button -->
-                 <div class="carousel-button prev">
-                   <!-- from linearicons icon font -->
-                   <span class="lnr lnr-chevron-left"></span>
-                 </div>
-                 <!-- images -->
-                 <div class="carousel-images">
-                   <img src="images/IMG_8236.jpg" alt="corgi looking cute" class="image"><button class="image-buttons">This One</button>
-                   <img src="images/IMG_8237.jpg" alt="" class="image"><button class="image-buttons">This One</button>
-                   <img src="images/IMG_8238.jpg" alt="corgi in goggles" class="image"><button class="image-buttons">This One</button>
-                   <img src="images/IMG_8239.jpg" alt="corgi in a boat" class="image"><button class="image-buttons">This One</button>
-                 </div>
-                 <!-- next button -->
-                 <div class="carousel-button next">
-                   <!-- from linearicons icon font -->
-                   <span class="lnr lnr-chevron-right"></span>
-                 </div>
-               </div>
-             </div>
-     </aside>
-     <main>
-          <button class="modal-buttons" id="openModal">About the Game</button>
-  <div id="modal">
-    <div id="modal-textbox">
-      <h1>Learn to Play Bridge</h1>
-      <p>
-        Bridge is played with four people sitting at a card table using a standard
-        deck of 52 cards (no jokers). The players across from each other form
-        partnerships as North-South and East-West.
-      </p>
-      <p>
-        Draw cards to select the person to deal the cards (the dealer). This person
-        distributes the cards face down, in clockwise rotation one at a time, until
-        each player at the table has a hand consisting of 13 cards.
-      </p>
-      <p>
-        After the play of each deal is completed, the opportunity to deal moves around
-        the table clockwise so that each person has a turn to deal out the cards.
-      </p>
-      <div id="modal-footer">
-        <button class="modal-buttons" id="close">Close</button>
+<body>
+  <nav>
+    <div><a href="index.html">Stay At Home</a></div>
+    <div><a href="">Alone Mom</a></div>
+  </nav>
+  <aside class="flex-ctr">
+    <div class="container">
+
+      <!-- Tamogathchi Home -->
+      <section id="Tamagotchi-home" class="none">
+        <!-- <div class="egg"></div> -->
+        <!-- =========== CAROUSEL TOP ============== -->
+        <!-- <img src="images/carousel.png" alt=""> -->
+        <h1>CORGI CAROUSEL!</h1>
+        <!-- =========== CAROUSEL CONTAINER ======== -->
+        <div class="carousel-container">
+          <!-- previous button -->
+          <div class="carousel-button prev">
+            <!-- from linearicons icon font -->
+            <span class="lnr lnr-chevron-left"></span>
+          </div>
+          <!-- images -->
+          <div class="carousel-images">
+            <img src="images/IMG_8236.jpg" alt="corgi looking cute" class="image">
+            <img src="images/IMG_8237.jpg" alt="" class="image">
+            <img src="images/IMG_8238.jpg" alt="corgi in goggles" class="image">
+            <img src="images/IMG_8239.jpg" alt="corgi in a boat" class="image">
+          </div>
+          <div class= 'carousel-button select'><button id="select-image">Pick me</button></div>
+          <!-- next button -->
+          <div class="carousel-button next">
+            <!-- from linearicons icon font -->
+            <span class="lnr lnr-chevron-right"></span>
+          </div>
+        </div>
+    </div>
+  </aside>
+  <main>
+    <button class="modal-buttons" id="openModal">About the Game</button>
+    <div id="modal">
+      <div id="modal-textbox">
+        <h1>Instructions</h1>
+        <p>
+          <div class="instructions-images">
+          <img src="images/IMG_8237.jpg" alt="" class="image">
+          </div>
+        </p>
+        <div id="modal-footer">
+          <button class="modal-buttons" id="close">Close</button>
+        </div>
       </div>
     </div>
+    <button class="modal-buttons" id="openEgg">About the Egg</button>
+    <div id="egg-modal">
+      <div id="egg-textbox">
+        <h1>Here's your egg</h1>
+        <p>
+        <div class="egg"></div>
+        </p>
+        <div id="egg-footer">
+
+          <button class="modal-buttons" id="closeEgg">Back to</button>
+        <!-- </div> -->
       </div>
+    </div>
+
     <div id="barbie">
-</div>
-<div class="button-container">
-    <button id="birkin">Buy Birkin</button>
-    <button id = "red-bottoms">Buy Red Bottoms</button>
-    <button id="work">Get Paid</button>
-    <button id = "rental">Invest in a rental</button>
-</div>
+    </div>
+    <div class="button-container">
+      <button id="birkin">Buy Birkin</button>
+      <button id="red-bottoms">Buy Red Bottoms</button>
+      <button id="work">Get Paid</button>
+      <button id="rental">Invest in a rental</button>
+    </div>
 
 
 
 
 
 
-     </main>
-     <footer class="flex-ctr">Footer</footer>
+  </main>
+  <footer class="flex-ctr">Footer</footer>
 </body>
+
 </html>
