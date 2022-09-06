@@ -36,13 +36,13 @@ class AlienShip {
 const shipPropEl = document.getElementById('ship-prop');
 shipPropEl.innerHTML = 
 `
-<h1>The ${uss_sch.name} has ${uss_sch.accuracy} percent accuracy</h1>`
+<h6>The ${uss_sch.name} has ${uss_sch.accuracy} percent accuracy, ${uss_sch.firepower} firepower, and ${uss_sch.hull} hull</h6>`
 
 
 
 const alienShipEl = document.getElementById('alien-prop');
 alienShipEl.innerHTML = 
-`<h1>${aliens[1].name} has ${aliens[1].accuracy} percent accuracy</h1>`
+`<h6>${aliens[1].name} has ${aliens[1].accuracy} percent  accuracy, ${aliens[1].firepower}  firepower, and ${aliens[1].hull}  hull</h6>`
      
 
 
