@@ -60,17 +60,87 @@ const names= "`The ship's name is ${uss_s.name} it has ${uss_s.hull} hull and  $
 
 
 
- // Event listener for myBtn
+
+
+var people = [
+     {name: 'John', age: 23}, 
+     {name: 'Andrew', age: 3}, 
+     {name: 'Peter', age: 8}, 
+     {name: 'Hanna', age: 14}, 
+     {name: 'Adam', age: 37}
+];
+
+// const nameAgeFn = ()=> {
+//      const myAge = 30
+//      people.forEach(person => {
+//           if (myAge >= person.age) {
+//           console.log(`${person.name} is ${myAge - person.age} years younger than me`)
+//           } else {
+
+//             console.log(`${person.name} is ${person.age - myAge} years older than me`)
+//           }
+ 
+//         })
+//      }
+     
 
 const element = document.getElementById("myBtn");
 element.addEventListener("click", myFunction);
 function myFunction() {
-  document.getElementById("demo").innerHTML = `The ship's name is ${uss_s.name} it has ${uss_s.hull} hull and  ${uss_s.firepower} firepower and ${uss_s.accuracy} accuracy consistently.`;
+     const myAge = 30
+     people.forEach(person => {
+          if (myAge >= person.age) {
+          console.log(`${person.name} is ${myAge - person.age} years younger than me`)
+          } else {
+
+            console.log(`${person.name} is ${person.age - myAge} years older than me`)
+          }
+ 
+        })
+  
 }
 
 
 
 
+ // Event listener for myBtn
+
+// const element = document.getElementById("myBtn");
+// element.addEventListener("click", myFunction);
+// function myFunction() {
+//      console.log(nameAgeFn(people))
+//   document.getElementById("demo").innerHTML = `The ship's name is ${uss_s.name} it has ${uss_s.hull} hull and  ${uss_s.firepower} firepower and ${uss_s.accuracy} accuracy consistently. The 3rd alien ship's accuracy is ${aliens[2].accuracy}. Do you dare? }`;
+// }
+
+
+// var cubes = [["string", "string"], ["string", "string"]];
+
+// for(var i = 0; i < cubes.length; i++) {
+//     for(var j = 0; j < cubes[i].length; j++) {
+//         console.log(cubes[i][j]);
+//     }
+// }
+
+//////////////////////// game sim/////////////////
+
+// make protag /////////
+const us = {
+     name: 'us',
+     hull: 10,
+     firepower: 5,
+     accuracy: 0.7
+}
+
+// make antag ///////////
+const them = {
+     name: 'alien',
+     hull: Math.floor(Math.random() * 4) + 3,
+     firepower: Math.floor(Math.random() * 3) + 2,
+     accuracy:  Math.floor(Math.random() * 3) + 6 / 10
+}
+
+
+    
 
 
 
@@ -81,16 +151,8 @@ function myFunction() {
 
 
 
-// const h1El=document.createElement("#id");
-// h1El.innerText = 
 
-// var people = [
-//      {name: 'John', age: 23}, 
-//      {name: 'Andrew', age: 3}, 
-//      {name: 'Peter', age: 8}, 
-//      {name: 'Hanna', age: 14}, 
-//      {name: 'Adam', age: 37}
-// ];
+
  
 //  const anyAdult = people.some(person => person.age >= 18);
 //  console.log(anyAdult); // true
