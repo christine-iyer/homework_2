@@ -45,10 +45,14 @@ aliens.forEach((element, index, array) => {
      console.log(index); // 0, 1, 2
      console.log(array); // same myArray object 3 times
  });
+ console.log(aliens)
 
 // aliens.forEach(function(alien of aliens){
 //      console.log("Oh mymymy" + alien + "!!");
 //  })
+
+const h1El=document.createElement("#id");
+h1El.innerText = 
 
 const people = [
      {name: 'John', age: 23}, 
@@ -64,3 +68,31 @@ const people = [
  
 // const newArray = myArray.filter(element => element.x > 250);
 // console.log(newArray); 
+
+const para = document.createElement("p");
+let node = document.createTextNode("This is new text...highlighted ibn purple. ");
+node = document.createTextNode("Tricked ya!");
+para.appendChild(node);
+para.style.fontWeight = "bold";
+para.style.background = "#f3f3f3";
+para.style.fontSize = "x-large";
+const element = document.getElementById("div1");
+element.appendChild(para);
+const aliens = [
+     new AlienShip('alien Level 1', this.accuracy, this.firepower,this.hull) ,
+     new AlienShip('alien Level 2', this.accuracy, this.firepower,this.hull) ,
+     new AlienShip('alien Level 3', this.accuracy, this.firepower,this.hull) ,
+     new AlienShip('alien Level 4', this.accuracy, this.firepower,this.hull) ,
+     new AlienShip('alien Level 5', this.accuracy, this.firepower,this.hull) 
+]
+aliens.forEach((element, index, array) => {
+     console.log(element.x); // 100, 200, 300
+     console.log(index); // 0, 1, 2
+     console.log(array); // same myArray object 3 times
+ });
+ console.log(aliens);
+
+const h1El = document.getElementById("class");
+h1El.textContent = aliens;
+h1El.appendChild('div')
+
