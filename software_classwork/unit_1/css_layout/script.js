@@ -207,7 +207,7 @@ barbie.render = () => {
 openBtn.addEventListener('click', openModal)
 closeBtn.addEventListener('click', closeModal)
 closeBtn.addEventListener('click', barbie.render)
-// setTimeout(openModal, 3000);
+setTimeout(openModal, 3000);// 
 
 
 openEggBtn.addEventListener('click', openEggModal)
